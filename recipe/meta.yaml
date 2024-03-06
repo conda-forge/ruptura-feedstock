@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/iRASPA/RUPTURA
-  summary: "A simulation package to compute breakthrough curves and IAST mixture predictions."
+  summary: "A simulation package to compute breakthrough curves, IAST mixture predictions and fit isotherm parameters."
   license: MIT
   license_file: LICENSE.md
 
