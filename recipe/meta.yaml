@@ -1,5 +1,5 @@
-{% set name = "RUPTURA" %}
-{% set version = "1.0.1" %}
+{% set name = "ruptura" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ruptura-{{ version }}.tar.gz
-  sha256: 0bee44d066554c9028497f840b81eae94be0eede6cd30062e75d5f8666f59dbc
+  sha256: caaa11df08ed6a285ddf755f138359516adb7b061cb49717d5a22a5080a400ac
 
 build:
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
