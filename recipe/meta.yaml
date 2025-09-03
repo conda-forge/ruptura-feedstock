@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ruptura-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ruptura-{{ version }}.tar.gz
   sha256: 27001c61e0ee798d3e8e9f45c17228619d6c7af253d1c79309aac8cb2530d419
 
 build:
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:
